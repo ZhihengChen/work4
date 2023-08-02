@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>WCC Portfolio - Demo Page</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a id="home" href="https://zhihengchen.github.io/Wcc-portfolio/"> <h4>HOME</h4></a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>BW TELEVISION</h1>
+                <h2>by Zhiheng Chen</h6>
+                <p>BW Television is a virtual interactive installation which is controlled by music and mouse.</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/825532023?h=acd641c746" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>Black and White Television is a multisensory virtual interactive installation. The animation on the screen of BW TV is controlled by music, mouse position and slider’s data. Audiences can move mouse and drag the slider to interact with this project.</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p>The concept behind the multisensory virtual interactive installation, "Black and White Television," is to create an immersive experience for the audience by combining visual, auditory, and tactile elements. The installation utilizes a virtual black and white TV and speakers, controlled by music, mouse position, and slider data. The project aims to stimulate the audience's senses and provide an engaging and interactive encounter.</p>
+                <p>Originally, the plan was to generate virtual objects and integrate them into physical devices, utilizing real speakers and buttons. However, due to unforeseen challenges, the final presentation of the physical setup did not meet the my expectations. As a result, virtual versions of the black and white TV and speakers were developed, and a three.js scene was constructed to enhance control over lighting, space, position, materials, and size. </p>
+                <p>The project implementation involved the use of fragment and vertex shaders to create animations for the virtual objects. The three.js library built the 3D scene, imported the TV and speakers models, and incorporated an audio file. Data from the audio, mouse position, and GUI elements were then passed to the fragment shader to enable audience interaction with the virtual objects on the screen. </p>
+                
+                <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="assets/images/tv.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets/images/speaker.jpg"/>
+                    </div>
+                </div>
+                <!-- if you have a full width image try make it not too tall -->
+                <!-- <img src="../assets/images/tv.jpeg" width="50%" height="50%"/> -->
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="assets/images/fragment.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets/images/whitemodel.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets/images/scene.png"/>
+                    </div>
+                </div>
+
+                    <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="assets/images/code1.png"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets/images/code2.png"/>
+                    </div>
+                </div>
+                
+                <p>First, I used fragment and vertex shaders to create an animation of the virtual objects. Second, I created the 3D scene using three.js and imported the TV model, speakers model and audio file. Then I passed the audio data, mouse position data and Gui’s data from three.js to the fragment shader and used these data to allow the audiences to interact with the virtual objects on the screen. I used three.js, the fragment and vertex shaders and Blender to create the virtual objects because these are tools I am not familiar with and I think they are very suitable for 3D object creation. I really wanted to learn more about programming techniques for 3D objects. </p>
+            
+                <!-- example of styling for three images, you can write your own styling -->
+                <!-- <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                </div> -->
+
+                
+
+                <!-- default flex item is for 4 & follows media query styling for home page -->
+                <!-- <div class="flex-container">
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                </div> -->
+         
+            </section>
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>Throughout the project, I encountered challenges that prompted a shift in my original approach. While the final rendering and modelling of the 3D scene were satisfying, the animation of the virtual objects and the interactive aspects of the installation require further improvement. I acknowledge the need to explore additional algorithms to enhance the generation of virtual objects and plan to dedicate more time to studying three.js and advancing my skills in 3D object programming.</p>
+                <p>Despite the initial setbacks, the decision to transition to a virtual environment using three.js proved beneficial. It allowed me to exercise greater control over various elements of the installation, including lighting, space, position, materials, and size. By utilizing tools such as three.js, fragment and vertex shaders, and Blender, I expanded their skill set and acquired valuable experience in the creation of 3D objects.</p>
+                <p>Looking ahead, I am determined to make the virtual scene more captivating and alluring. This entails investing more time in studying algorithms and delving deeper into the possibilities offered by three.js. By doing so, I aspire to enhance the animation of virtual objects and refine the interactive nature of the installation. Specifically, integrating buttons within the 3D scene, rather than relying solely on HTML elements, is an area I intend to explore.</p>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+                    <li>https://luruke.github.io/monolith/index.html</li>
+                    <li>https://twitter.com/luruke</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
+    </body>
+</html>
