@@ -4,18 +4,23 @@
 body{
     font-family: Verdana, sans-serif;
     margin: 0;
+    background-color: black;
+    color: whitesmoke;
+    
 }
 
 header h1{
-    font-size: 35px;
+    font-size: 40px;
     margin:20px 0;
 }
 header h2{
-    font-size: 20px;
+    font-size: 17px;
     margin: 0px 0px 40px 0px;
     font-weight: normal;
     font-style: italic;
 }
+
+
 
 main.documentation-page h3{
     margin-top: 40px;
@@ -62,7 +67,7 @@ nav{
 }
 
 nav a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 nav a:hover{
@@ -119,6 +124,9 @@ img{
 
 .flex-basis-half .flex-item{
     flex-basis: 50%; 
+}
+.flex-basis-fourth .flex-item{
+    flex-basis: 25%; 
 }
 
 .flex-item a{
